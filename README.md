@@ -38,6 +38,9 @@ Explore Page Wireframe
 
 ![Explore](https://github.com/amarp86/travel-keeper/blob/main/Wireframe%20Explore.png)
 
+Sign Up Wireframe
+![signup](https://github.com/amarp86/travel-keeper/blob/main/Wireframe%20Sign%20Up.png)
+
 
 
 Component Tree
