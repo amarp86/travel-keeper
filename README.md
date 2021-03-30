@@ -1,14 +1,17 @@
 # Travel-Keeper
 
-Overview
+Overview:
+
 Travel Keeper is a web application for users to login and post pictures of the places they have been and allow other's to like and comment on their photos.
 
 
-MVP
+MVP:
+
 This app will utlilize 4 tables in the backened - Users, Pictures, Likes and Comments which will be used by a React Front End to display the information in a beautiful way using at minimum 8 react components.
 
 
-Goals
+Goals:
+
 1. Create backened server with Ruby on Rails and 4 tables with appropriate associations.
 2. Deploy backend to heroku
 3. Create React front end using CRA
