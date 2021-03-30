@@ -30,23 +30,15 @@ Client (Front End)
 Wireframes
 Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-Dummy Link
+Homepage Wireframe
 
 ![Home](https://github.com/amarp86/travel-keeper/blob/main/Wireframe%20Home.png)
 
-Desktop Hero
-Dummy Link
+Explore Page Wireframe
 
-Resource Index
-Dummy Link
+![Explore](https://github.com/amarp86/travel-keeper/blob/main/Wireframe%20Explore.png)
 
-Resource Show
-Dummy Link
 
-Tablet Resource Index
-Dummy Link
-
-Mobile Resource Index
 
 Component Tree
 Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
