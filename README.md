@@ -5,11 +5,11 @@ Travel Keeper is a web application for users to login and post pictures of the p
 
 
 MVP
-This app will utlilize 3 tables in the backened - Users, Pictures, and Comments which will be used by a React Front End to display the information in a beautiful way using at minimum 8 react components.
+This app will utlilize 4 tables in the backened - Users, Pictures, Likes and Comments which will be used by a React Front End to display the information in a beautiful way using at minimum 8 react components.
 
 
 Goals
-1. Create backened server with Ruby on Rails and 3 tables with appropriate associations.
+1. Create backened server with Ruby on Rails and 4 tables with appropriate associations.
 2. Deploy backend to heroku
 3. Create React front end using CRA
 4. Deploy front end to Netlify
@@ -20,9 +20,10 @@ Libraries and Dependencies
 | --- | ----------- |
 | React | Front End Framework |
 | React Router Dom | allow inter page linking and routing for front end |
+| Axios | allow frontend to communicate with backend|
 | Materials UI | styled componenets to integrate into front end |
 | Ruby on Rails | back end server framework |
-| bcrypt/JWT | authorization dependency |
+| bcrypt/JWT | authorization setup |
 
 
 Client (Front End)
