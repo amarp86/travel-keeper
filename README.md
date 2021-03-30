@@ -92,7 +92,7 @@ Time Estimates
 
 Server (Back End)
 ERD Model
-Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+![ERD](https://github.com/amarp86/travel-keeper/blob/main/TravelKeeper%20ERD.png)
 
 ERD Sample
 
