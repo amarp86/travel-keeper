@@ -32,8 +32,7 @@ Use the Wireframes section to display desktop, tablet and mobile views. No hand-
 
 Dummy Link
 
-Desktop Landing
-Dummy Link
+![Home](https://github.com/amarp86/travel-keeper/blob/main/Wireframe%20Home.png)
 
 Desktop Hero
 Dummy Link
