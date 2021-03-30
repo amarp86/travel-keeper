@@ -68,26 +68,26 @@ src
 |__ services/
 
 Time Estimates
-| Component | Priority | Estimate Time | Time Invested | Actual Time |
-| ------------------------------- | :------: | :-----------: | :-----------: | :---------: |
-| Setting Up Basic Layout | H | 2 Hr | 2 Hr | 2 Hr |
-| Accessing API | H | 3 Hr | 3 Hr | 3 Hr |
-| JS/React API Initial Get Request | H | 3 Hr | 3 Hr | 3 Hr |
-| Parsing API Data | H | 3 Hr | 3 Hr | 3 Hr |
-| Creating React Elements | H | 3 Hr | 3 Hr | 3 Hr |
-| React Route/Links | H | 3 Hr | 3 Hr | 3 Hr |
-| React Post/Feed Component | H | 3 Hr | 3 Hr | 3 Hr |
-| React/JS post/put/delete calls | H | 3 Hr | 3 Hr | 3 Hr |
-| React Header/Footer | M | 3 Hr | 3 Hr | 3 Hr |
-| React Locations List | M | 3 Hr | 3 Hr | 3 Hr |
-| CSS Styling DESKTOP | H | 3 Hr | 3 Hr | 3 Hr |
-| CSS Styling MOBILE | H | 3 Hr | 3 Hr | 3 Hr |
-| POST MVP - Ranking Order | L | 3 Hr | N/A | 0 Hr |
-| UI/UX breakpoints | M | 3 Hr | 4 Hr | 4 Hr|
-| Testing React Components | H | 3 Hr | 4 Hr | 4 Hr |
-| Testing CSS breakpoints | M | 3 Hr | 5 Hr | 5 Hr |
-| Hosting Final Product | M | 3 Hr | 1 Hr | 1 Hr |
-| Total Time | | 50 Hrs | 49 Hrs | 49 Hrs |
+| Component | Priority | Estimate Time | Time Invested 
+| ------------------------------- | :------: | :-----------: | :-----------: |
+| Setting Up Basic Layout | H | 2 Hr |  Hr |
+| Creating API | H | 5 Hr | 3 Hr |  Hr |
+| Testing API | H | 3 Hr |  Hr |
+| Deploy API | H | 3 Hr |  Hr | 
+| Create React Front End | H | 3 Hr |  Hr | 
+| React Route/Links | H | 3 Hr |  Hr | 
+| React Post/Feed Component | H | 3 Hr |  Hr | 
+| React/JS post/put/delete calls | H | 3 Hr |  Hr | 
+| React Header/Footer | M | 3 Hr |  Hr | 
+| React Locations | M | 3 Hr |  Hr | 
+| CSS Styling DESKTOP | H | 3 Hr |  Hr | 
+| CSS Styling MOBILE | H | 3 Hr |  Hr | 
+| POST MVP - Likes | L | 3 Hr | Hr | 
+| UI/UX breakpoints | M | 3 Hr |  Hr | 
+| Testing React Components | H | 3 Hr |  Hr | 
+| Testing CSS breakpoints | M | 3 Hr |  Hr | 
+| Hosting Final Product | M | 3 Hr |  Hr | 
+| Total Time | | 55 Hrs | Hrs | 
 
 
 Server (Back End)
