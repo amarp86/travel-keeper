@@ -1,31 +1,31 @@
 # travel-keeper
 
 Overview
-Project Title is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper.
+Travel Keeper is a web application for users to login and post pictures of the places they have been and allow other's to like and comment on their photos.
 
 
 MVP
-The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-The Project Title MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper.
+This app will utlilize 3 tables in the backened - Users, Pictures, and Comments which will be used by a React Front End to display the information in a beautiful way using at minimum 8 react components.
 
 
 Goals
-Lorem ipsum, dolor sit amet,
-consectetur adipiscing elit.
-Phasellus dapibus fermentum risus vitae bibendum.
-Integer vel ipsum mollis odio sollicitudin ornare eu vel ex.
-etc.
+1. Create backened server with Ruby on Rails and 3 tables with appropriate associations.
+2. Deploy backend to heroku
+3. Create React from end using CRA
+4. Deploy front end to Netlify
 
 Libraries and Dependencies
 Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
-Library	Description
-React	Lorem ipsum dolor sit amet, consectetur.
-React Router	Lorem ipsum dolor sit amet, consectetur.
-React SemanticUI	Lorem ipsum dolor sit amet, consectetur.
-Express	Lorem ipsum dolor sit amet, consectetur.
-Express Router	Lorem ipsum dolor sit amet, consectetur.
+| Library | Description |
+| --- | ----------- |
+| React | Front End Framework |
+| React Router Dom | allow inter page linking and routing for front end |
+| Materials UI | styled componenets to integrate into front end |
+| Ruby on Rails | back end server framework |
+| bcrypt/JWT | authorization dependency |
+
+
 Client (Front End)
 Wireframes
 Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
