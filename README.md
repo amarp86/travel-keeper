@@ -11,7 +11,7 @@ This app will utlilize 3 tables in the backened - Users, Pictures, and Comments 
 Goals
 1. Create backened server with Ruby on Rails and 3 tables with appropriate associations.
 2. Deploy backend to heroku
-3. Create React from end using CRA
+3. Create React front end using CRA
 4. Deploy front end to Netlify
 
 Libraries and Dependencies
