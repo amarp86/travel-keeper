@@ -15,7 +15,6 @@ Goals
 4. Deploy front end to Netlify
 
 Libraries and Dependencies
-Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
 | Library | Description |
 | --- | ----------- |
@@ -48,6 +47,7 @@ Tablet Resource Index
 Dummy Link
 
 Mobile Resource Index
+
 Component Tree
 Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
 
@@ -68,13 +68,26 @@ src
 |__ services/
 
 Time Estimates
-Use this section to estimate the time necessary to build out each of the components you've described above.
-
-Task	Priority	Estimated Time	Time Invested	Actual Time
-Add Contact Form	L	3 hrs	2 hrs	3 hrs
-Create CRUD Actions	H	3 hrs	1 hrs	TBD
-TOTAL		6 hrs	3 hrs	TBD
-Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe.
+| Component | Priority | Estimate Time | Time Invested | Actual Time |
+| ------------------------------- | :------: | :-----------: | :-----------: | :---------: |
+| Setting Up Basic Layout | H | 2 Hr | 2 Hr | 2 Hr |
+| Accessing API | H | 3 Hr | 3 Hr | 3 Hr |
+| JS/React API Initial Get Request | H | 3 Hr | 3 Hr | 3 Hr |
+| Parsing API Data | H | 3 Hr | 3 Hr | 3 Hr |
+| Creating React Elements | H | 3 Hr | 3 Hr | 3 Hr |
+| React Route/Links | H | 3 Hr | 3 Hr | 3 Hr |
+| React Post/Feed Component | H | 3 Hr | 3 Hr | 3 Hr |
+| React/JS post/put/delete calls | H | 3 Hr | 3 Hr | 3 Hr |
+| React Header/Footer | M | 3 Hr | 3 Hr | 3 Hr |
+| React Locations List | M | 3 Hr | 3 Hr | 3 Hr |
+| CSS Styling DESKTOP | H | 3 Hr | 3 Hr | 3 Hr |
+| CSS Styling MOBILE | H | 3 Hr | 3 Hr | 3 Hr |
+| POST MVP - Ranking Order | L | 3 Hr | N/A | 0 Hr |
+| UI/UX breakpoints | M | 3 Hr | 4 Hr | 4 Hr|
+| Testing React Components | H | 3 Hr | 4 Hr | 4 Hr |
+| Testing CSS breakpoints | M | 3 Hr | 5 Hr | 5 Hr |
+| Hosting Final Product | M | 3 Hr | 1 Hr | 1 Hr |
+| Total Time | | 50 Hrs | 49 Hrs | 49 Hrs |
 
 
 Server (Back End)
@@ -84,7 +97,7 @@ Use this section to display an image of a computer generated ERD model. You can 
 ERD Sample
 
 Post-MVP
-Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+1. Add likes table to backened and implement on front end
 
 Code Showcase
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
