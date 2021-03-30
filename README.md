@@ -1,4 +1,4 @@
-# travel-keeper
+# Travel-Keeper
 
 Overview
 Travel Keeper is a web application for users to login and post pictures of the places they have been and allow other's to like and comment on their photos.
@@ -51,18 +51,19 @@ Component Tree
 ![Component Structure](https://github.com/amarp86/travel-keeper/blob/main/Travel%20Keeper%20Component%20Structure.png)
 
 Component Architecture
-Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like.
-
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
+|__ assets/      
+      |__ images      
 |__ components/
-      |__ Header.jsx
+      |__ SignUp.jsx
+      |__ SignOut.jsx
+      |__ SignIn.jsx
+      |__ Explore.jsx
+      |__ Home.jsx
 |__ services/
+      |__ APIconfig.js
+      |__ Axios.jsx
 
 Time Estimates
 | Component | Priority | Estimate Time | Time Invested 
@@ -97,7 +98,8 @@ Post-MVP
 1. Add likes table to backened and implement on front end
 
 Code Showcase
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+
 
 Code Issues & Resolutions
-Use this section to list of all major issues encountered and their resolution.
+1. Issue 1
+2. Issue 2
