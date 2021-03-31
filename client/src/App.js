@@ -6,6 +6,8 @@ import Explore from "./containers/Explore";
 import Login from "./screens/Login";
 import Register from "./screens/Register";
 import PostCreate from "./screens/PostCreate";
+import PostEdit from "./screens/PostEdit";
+import { getAllPosts, putPost } from "./services/posts";
 import {
   loginUser,
   registerUser,
@@ -15,6 +17,7 @@ import {
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
+  const [allPosts, setAllPosts] = useState([]);
   const history = useHistory();
 
   useEffect(() => {
@@ -23,6 +26,12 @@ function App() {
       setCurrentUser(userData);
     };
     handleVerify();
+
+    const getPosts = async () => {
+      const posts = await getAllPosts();
+      setAllPosts(posts);
+    };
+    getPosts();
   }, []);
 
   const handleLogin = async (formData) => {
@@ -42,6 +51,15 @@ function App() {
     localStorage.removeItem("authToken");
     removeToken();
   };
+  const handleUpdate = async (id, formData) => {
+    const updatedPost = await putPost(id, formData);
+    setAllPosts((prevState) =>
+      prevState.map((post) => {
+        return post.id === Number(id) ? updatedPost : post;
+      })
+    );
+    history.push("/explore");
+  };
   return (
     <div className="App">
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
@@ -53,10 +71,13 @@ function App() {
             <Register handleRegister={handleRegister} />
           </Route>
           <Route path="/explore">
-            <Explore />
+            <Explore allPosts={allPosts} currentUser={currentUser} />
           </Route>
           <Route path="/createpost">
             <PostCreate currentUser={currentUser} />
+          </Route>
+          <Route path="/posts/:id/edit">
+            <PostEdit allPosts={allPosts} handleUpdate={handleUpdate} />
           </Route>
         </Switch>
       </Layout>
