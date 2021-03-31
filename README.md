@@ -57,7 +57,7 @@ Adobe XD Link: FULL DISPLAY OF WIREFRAMES
 
 Component Tree
 
-![Component Structure](https://github.com/amarp86/travel-keeper/blob/main/Travel%20Keeper%20Component%20Structure.png)
+![Component Structure](https://github.com/amarp86/travel-keeper/blob/dev/Component%20Tree%202.png)
 
 Component Architecture
 
