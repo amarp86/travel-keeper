@@ -105,6 +105,7 @@ ERD Sample
 
 Post-MVP
 1. Add likes table to backened and implement on front end
+2. Add a scrolling feed page and make individual detail page per post
 
 Code Showcase
 
