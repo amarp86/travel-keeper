@@ -2,6 +2,9 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 import Layout from "./components/layout/Layout";
+import Explore from "./screens/Explore";
+import Login from "./screens/Login";
+import Register from "./screens/Register";
 import {
   loginUser,
   registerUser,
@@ -40,7 +43,19 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Welcome to Travel Keeper</h1>
+      <Layout currentUser={currentUser} handleLogout={handleLogout}>
+        <Switch>
+          <Route path="/login">
+            <Login handleLogin={handleLogin} />
+          </Route>
+          <Route path="/register">
+            <Register handleRegister={handleRegister} />
+          </Route>
+          <Route path="/explore">
+            <Explore />
+          </Route>
+        </Switch>
+      </Layout>
     </div>
   );
 }
