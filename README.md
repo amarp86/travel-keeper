@@ -99,12 +99,13 @@ Time Estimates
 
 Server (Back End)
 ERD Model
-![ERD](https://github.com/amarp86/travel-keeper/blob/main/TravelKeeper%20ERD2.png)
+![ERD](https://github.com/amarp86/travel-keeper/blob/dev/ERD4.png)
 
 ERD Sample
 
 Post-MVP
 1. Add likes table to backened and implement on front end
+2. Add a scrolling feed page and make individual detail page per post
 
 Code Showcase
 
