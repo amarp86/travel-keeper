@@ -45,7 +45,8 @@ Explore Page Wireframe
 Sign Up Wireframe
 ![signup](https://github.com/amarp86/travel-keeper/blob/main/Wireframe%20Sign%20Up.png)
 
-Mobile Homepage
+Mobile Homepage:
+
 ![mobile](https://github.com/amarp86/travel-keeper/blob/main/Wireframe%20Mobile.png)
 
 Adobe XD Link:
