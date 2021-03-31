@@ -99,7 +99,7 @@ Time Estimates
 
 Server (Back End)
 ERD Model
-![ERD](https://github.com/amarp86/travel-keeper/blob/dev/TravelKeeperERD3.png)
+![ERD](https://github.com/amarp86/travel-keeper/blob/dev/ERD4.png)
 
 ERD Sample
 
