@@ -2,7 +2,11 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 export default function PostEdit(props) {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    img_url: "",
+    location: "",
+    description: "",
+  });
   let { img_url, description, location } = formData;
   const { id } = useParams();
   const { allPosts, handleUpdate } = props;
