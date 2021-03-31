@@ -2,9 +2,10 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 import Layout from "./components/layout/Layout";
-import Explore from "./screens/Explore";
+import Explore from "./containers/Explore";
 import Login from "./screens/Login";
 import Register from "./screens/Register";
+import PostCreate from "./screens/PostCreate";
 import {
   loginUser,
   registerUser,
@@ -53,6 +54,9 @@ function App() {
           </Route>
           <Route path="/explore">
             <Explore />
+          </Route>
+          <Route path="/createpost">
+            <PostCreate currentUser={currentUser} />
           </Route>
         </Switch>
       </Layout>

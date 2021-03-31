@@ -10,13 +10,13 @@ export const getOnePost = async (id) => {
   return resp.data;
 };
 
-export const postPost = async (postData) => {
-  const resp = await api.post("/posts", { post: postData });
+export const postPost = async (formData) => {
+  const resp = await api.post(`/posts`, { post: formData });
   return resp.data;
 };
 
-export const putPost = async (id, postData) => {
-  const resp = await api.put(`/posts/${id}`, { post: postData });
+export const putPost = async (id, formData) => {
+  const resp = await api.put(`/posts/${id}`, { post: formData });
   return resp.data;
 };
 
