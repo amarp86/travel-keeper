@@ -91,7 +91,6 @@ function App() {
           <Route path="/posts/:id/edit">
             <PostEdit allPosts={allPosts} handleUpdate={handleUpdate} />
           </Route>
-          <Route path="/posts/:id/comments/addcomment"></Route>
         </Switch>
       </Layout>
     </div>

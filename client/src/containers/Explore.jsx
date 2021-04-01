@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-import { addComment } from "../services/comments";
 import { useState, useEffect } from "react";
 import { getAllPosts } from "../services/posts";
 import Likes from "../components/Likes";
+import NewComment from "../components/NewComment";
 
 function Explore(props) {
   const { currentUser, handleDelete } = props;
@@ -47,16 +47,11 @@ function Explore(props) {
           {currentUser?.id !== post.user_id && (
             <>
               <Likes allLikes={post.likes} postId={post.id} />
-              <button
-                onClick={() =>
-                  addComment(post.id, {
-                    post_id: post.id,
-                    user_id: currentUser.id,
-                  })
-                }
-              >
-                Add Comment
-              </button>
+              <NewComment
+                allComments={post.comments}
+                postId={post.id}
+                currentUser={currentUser}
+              />
             </>
           )}
         </div>
