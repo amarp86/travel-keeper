@@ -9,7 +9,8 @@ class PostsController < ApplicationController
     @posts = Post.all
     
 
-    render json: @posts, include: :user
+    render json: @posts, include: [:user, :comments, :likes]
+    
   end
 
   # GET /posts/1

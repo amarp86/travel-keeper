@@ -68,8 +68,10 @@ function App() {
   return (
     <div className="App">
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
-        <Home />
         <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
           <Route path="/login">
             <Login handleLogin={handleLogin} />
           </Route>
