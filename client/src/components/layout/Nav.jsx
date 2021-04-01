@@ -10,6 +10,16 @@ function Nav(props) {
         </Link>
         {currentUser ? (
           <>
+            <Link to="/explore">
+              <h4>Explore</h4>
+            </Link>
+          </>
+        ) : (
+          <Link to="/login">Login</Link>
+        )}
+
+        {currentUser ? (
+          <>
             <p>{currentUser.username}</p>
             <button onClick={handleLogout}>Logout</button>
           </>

@@ -4,16 +4,20 @@ import { postPost } from "../services/posts";
 
 export default function PostCreate(props) {
   const history = useHistory();
-  const [posts, setPosts] = useState([]);
-  const [formData, setFormData] = useState({});
+
+  const [formData, setFormData] = useState({
+    img_url: "",
+    location: "",
+    description: "",
+  });
   const { img_url, location, description } = formData;
 
   const handleCreate = async () => {
     const newPost = await postPost(formData);
 
-    setPosts((prevState) => [...prevState, newPost]);
-    console.log(posts);
-    history.push("/posts");
+    props.setAllPosts((prevState) => [...prevState, newPost]);
+
+    history.push("/explore");
   };
   const handleChange = (e) => {
     const { name, value } = e.target;

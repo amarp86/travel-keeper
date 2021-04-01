@@ -7,7 +7,8 @@ import Login from "./screens/Login";
 import Register from "./screens/Register";
 import PostCreate from "./screens/PostCreate";
 import PostEdit from "./screens/PostEdit";
-import { getAllPosts, putPost } from "./services/posts";
+import Home from "./components/Home";
+import { getAllPosts, putPost, destroyPost } from "./services/posts";
 import {
   loginUser,
   registerUser,
@@ -60,9 +61,14 @@ function App() {
     );
     history.push("/explore");
   };
+  const handleDelete = async (id) => {
+    await destroyPost(id);
+    setAllPosts((prevState) => prevState.filter((food) => food.id !== id));
+  };
   return (
     <div className="App">
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
+        <Home />
         <Switch>
           <Route path="/login">
             <Login handleLogin={handleLogin} />
@@ -71,10 +77,14 @@ function App() {
             <Register handleRegister={handleRegister} />
           </Route>
           <Route path="/explore">
-            <Explore allPosts={allPosts} currentUser={currentUser} />
+            <Explore
+              allPosts={allPosts}
+              currentUser={currentUser}
+              handleDelete={handleDelete}
+            />
           </Route>
           <Route path="/createpost">
-            <PostCreate currentUser={currentUser} />
+            <PostCreate currentUser={currentUser} setAllPosts={setAllPosts} />
           </Route>
           <Route path="/posts/:id/edit">
             <PostEdit allPosts={allPosts} handleUpdate={handleUpdate} />
