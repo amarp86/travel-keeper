@@ -1,22 +1,26 @@
 import { Link } from "react-router-dom";
 import { createLike } from "../services/likes";
+import { addComment } from "../services/comments";
 import { useState, useEffect } from "react";
+import { getAllPosts } from "../services/posts";
 
 function Explore(props) {
-  const { allPosts, currentUser, handleDelete } = props;
-  const [toggle, setToggle] = useState(false);
-  const [allLikes, setAllLikes] = useState([]);
+  const { currentUser, handleDelete } = props;
+
+  const [currentPosts, setCurrentPosts] = useState([]);
 
   useEffect(() => {
-    const countLikes = () => {
-      allPosts.map((post, index) => setAllLikes(post.likes.length));
+    const getPosts = async () => {
+      const posts = await getAllPosts();
+      setCurrentPosts(posts);
     };
-    countLikes();
-  }, [toggle, allLikes]);
+
+    getPosts();
+  }, []);
 
   return (
     <div className="explore">
-      {allPosts.map((post, index) => (
+      {currentPosts.map((post, index) => (
         <div key={index} className="individual-post">
           <img src={post.img_url} alt={post.id} />
 
@@ -25,7 +29,9 @@ function Explore(props) {
           <h3>{post.description}</h3>
           <div className="comments-section">
             {post.comments.map((comment, index) => (
-              <p key={index}>{comment.content}</p>
+              <p key={index}>
+                {post.user.name} says {comment.content}
+              </p>
             ))}
           </div>
 
@@ -40,18 +46,16 @@ function Explore(props) {
           {currentUser?.id !== post.user_id && (
             <>
               <button
-                onClick={() => {
+                onClick={(e) => {
                   createLike(post.id, {
                     post_id: post.id,
                     user_id: currentUser.id,
                   });
-                  setToggle(!toggle);
                 }}
               >
                 Like
               </button>
               <h3>{post.likes.length}</h3>
-              {console.log(post)}
             </>
           )}
         </div>
