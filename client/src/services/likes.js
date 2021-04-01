@@ -5,8 +5,8 @@ export const getAllLikes = async (id) => {
   return resp.data;
 };
 
-export const createLike = async (post_id, body) => {
-  const resp = await api.post(`/posts/${post_id}/likes`, body);
+export const createLike = async (post_id) => {
+  const resp = await api.post(`/posts/${post_id}/likes`);
   return resp.data;
 };
 

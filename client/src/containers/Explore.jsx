@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { createLike } from "../services/likes";
+
 import { addComment } from "../services/comments";
 import { useState, useEffect } from "react";
 import { getAllPosts } from "../services/posts";
+import Likes from "../components/Likes";
 
 function Explore(props) {
   const { currentUser, handleDelete } = props;
@@ -45,17 +46,17 @@ function Explore(props) {
           )}
           {currentUser?.id !== post.user_id && (
             <>
+              <Likes allLikes={post.likes} postId={post.id} />
               <button
-                onClick={(e) => {
-                  createLike(post.id, {
+                onClick={() =>
+                  addComment(post.id, {
                     post_id: post.id,
                     user_id: currentUser.id,
-                  });
-                }}
+                  })
+                }
               >
-                Like
+                Add Comment
               </button>
-              <h3>{post.likes.length}</h3>
             </>
           )}
         </div>
