@@ -21,6 +21,8 @@
 .picture {
   grid-area: P;
   width: 800px;
+  height: 350px;
+  object-fit: cover;
 }
 .button-container {
   grid-area: BL;
@@ -34,6 +36,8 @@
 .comments-section {
   grid-area: C;
   padding: 10px 10px;
+  overflow-y: scroll;
+  max-height: 176px;
 }
 
 .likes-area {

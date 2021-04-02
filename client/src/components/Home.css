@@ -1,3 +1,20 @@
 .home {
   min-height: 100vh;
 }
+
+.home-banner-image {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.headliner {
+  font-size: 30px;
+  max-width: 40%;
+  position: absolute;
+  bottom: 119px;
+  left: 260px;
+  background-color: #939a456d;
+  color: rgba(255, 255, 255, 0.564);
+  font-weight: bold;
+  padding: 25px;
+}
