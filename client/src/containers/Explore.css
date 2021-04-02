@@ -8,8 +8,11 @@
 } */
 
 .each-full-post {
-  padding: 25px 0px;
-  margin: 0 auto;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 25px 50px;
+  margin: 10px auto;
   max-width: 85%;
   display: grid;
   grid-template-areas:
@@ -35,6 +38,8 @@
 
 .comments-section {
   grid-area: C;
+  border: 1px solid black;
+  margin: 5px;
   padding: 10px 10px;
   overflow-y: scroll;
   height: 176px;

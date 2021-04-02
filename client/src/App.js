@@ -9,7 +9,7 @@ import PostCreate from "./screens/PostCreate";
 import PostEdit from "./screens/PostEdit";
 import Home from "./components/Home";
 import { getAllPosts, putPost, destroyPost } from "./services/posts";
-import { getAllComments } from "./services/comments";
+
 import {
   loginUser,
   registerUser,
@@ -20,7 +20,7 @@ import {
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const [allPosts, setAllPosts] = useState([]);
-  const [allComments, setAllComments] = useState([]);
+
   const history = useHistory();
   const [toggle, setToggle] = useState(false);
 
@@ -87,7 +87,6 @@ function App() {
               allPosts={allPosts}
               currentUser={currentUser}
               handleDelete={handleDelete}
-              allComments={allComments}
               setToggle={setToggle}
             />
           </Route>

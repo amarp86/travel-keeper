@@ -17,7 +17,7 @@ function Explore(props) {
     };
 
     getPosts();
-  }, [allPosts, allPosts.comments]);
+  }, [allPosts]);
 
   return (
     <div className="explore-entire-area">
