@@ -10,24 +10,18 @@ function Nav(props) {
           <h1 className="title">Travel Keeper</h1>
         </Link>
         {currentUser ? (
-          <>
-            <Link to="/explore">
-              <h4>Explore</h4>
-            </Link>
-          </>
-        ) : (
-          <Link to="/login">
-            <button>Login</button>
-          </Link>
-        )}
-
-        {currentUser ? (
-          <>
+          <div className="logged-in-links">
+            <Link to="/explore">Explore</Link>
+            <Link to="/createpost">New Post</Link>
             <p>{currentUser.username}</p>
             <button onClick={handleLogout}>Logout</button>
-          </>
+          </div>
         ) : (
-          <Link to="/login">Login</Link>
+          <div classname="logged-out-links">
+            <Link to="/login">
+              <button>Login</button>
+            </Link>
+          </div>
         )}
       </header>
     </div>

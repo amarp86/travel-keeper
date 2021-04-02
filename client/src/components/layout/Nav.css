@@ -8,3 +8,14 @@
 .title {
   display: flex;
 }
+.logged-in-links {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0 auto;
+}
+
+.logged-in-links a {
+  text-decoration: none;
+  padding: 10px 10px;
+}

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import "./Explore.css";
 import { useState, useEffect } from "react";
 import { getAllPosts } from "../services/posts";
 import Likes from "../components/Likes";

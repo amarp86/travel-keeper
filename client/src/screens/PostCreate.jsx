@@ -4,7 +4,7 @@ import { postPost } from "../services/posts";
 
 export default function PostCreate(props) {
   const history = useHistory();
-
+  const { currentUser } = props;
   const [formData, setFormData] = useState({
     img_url: "",
     location: "",
@@ -27,43 +27,50 @@ export default function PostCreate(props) {
       user_id: props.currentUser.id,
     }));
   };
+  if (!currentUser) {
+    return (
+      <div classname="not-logged-in">
+        <h1>Please Log In First</h1>
+      </div>
+    );
+  } else
+    return (
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleCreate(formData);
+        }}
+      >
+        <h3>Create Post</h3>
+        <label>
+          Image Link:
+          <input
+            type="text"
+            name="img_url"
+            value={img_url}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Location:
+          <input
+            type="text"
+            name="location"
+            value={location}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Description:
+          <input
+            type="text"
+            name="description"
+            value={description}
+            onChange={handleChange}
+          />
+        </label>
 
-  return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        handleCreate(formData);
-      }}
-    >
-      <h3>Create Post</h3>
-      <label>
-        Image Link:
-        <input
-          type="text"
-          name="img_url"
-          value={img_url}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Location:
-        <input
-          type="text"
-          name="location"
-          value={location}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Description:
-        <input
-          type="text"
-          name="description"
-          value={description}
-          onChange={handleChange}
-        />
-      </label>
-      <button>Submit</button>
-    </form>
-  );
+        <button>Submit</button>
+      </form>
+    );
 }
