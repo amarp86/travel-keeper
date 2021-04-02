@@ -40,29 +40,39 @@ function Explore(props) {
 
           {currentUser && currentUser?.id === post.user_id && (
             <>
-              <Link to={`/posts/${post.id}/edit`}>
-                <button className="button">Edit</button>
-              </Link>
-              <button className="button" onClick={() => handleDelete(post.id)}>
-                Delete
-              </button>
-              <NewComment
-                allComments={post.comments}
-                postId={post.id}
-                currentUser={currentUser}
-              />
+              <div className="button-container">
+                <Link to={`/posts/${post.id}/edit`}>
+                  <button className="edit-button">Edit</button>
+                </Link>
+                <button
+                  className="delete-button"
+                  onClick={() => handleDelete(post.id)}
+                >
+                  Delete
+                </button>
+              </div>
+              <div className="new-comment">
+                <NewComment
+                  allComments={post.comments}
+                  postId={post.id}
+                  currentUser={currentUser}
+                />
+              </div>
             </>
           )}
           {currentUser && currentUser?.id !== post.user_id && (
-            <div className="likes-area">
-              <Likes allLikes={post.likes} postId={post.id} />
-
-              <NewComment
-                allComments={post.comments}
-                postId={post.id}
-                currentUser={currentUser}
-              />
-            </div>
+            <>
+              <div className="likes-area">
+                <Likes allLikes={post.likes} postId={post.id} />
+              </div>
+              <div className="new-comment">
+                <NewComment
+                  allComments={post.comments}
+                  postId={post.id}
+                  currentUser={currentUser}
+                />
+              </div>
+            </>
           )}
         </div>
       ))}
