@@ -1,30 +1,46 @@
+import { useState } from "react";
 import { addComment } from "../services/comments";
-import { useEffect, useState } from "react";
 
-function NewComment(props) {
-  const { allComments, postId } = props;
+export default function FoodCreate(props) {
   const [comments, setComments] = useState([]);
+  const [formData, setFormData] = useState({
+    user_id: "",
+    comment: "",
+    post_id: "",
+  });
+  const { comment } = formData;
+  const { postId, currentUser } = props;
 
-  useEffect(() => {
-    const preFillLikes = () => {
-      setComments(allComments);
-    };
-    preFillLikes();
-  }, [allComments]);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
-  const handleComment = async (e, content) => {
-    e.preventDefault();
-    const newComment = await addComment(postId, content);
+  const handleComment = async () => {
+    const newComment = await addComment(postId, {
+      content: comment,
+      user_id: currentUser.id,
+      post_id: postId,
+    });
     setComments((prevState) => [...prevState, newComment]);
   };
+
   return (
-    <div className="add-comment">
-      <form onSubmit={handleComment}>
-        <textarea name="comment" value={content} />
-        <button>Submit</button>
-      </form>
-    </div>
+    <form onSubmit={handleComment}>
+      <h3>Add A Comment</h3>
+      <label>
+        New Comment:
+        <input
+          type="text"
+          name="comment"
+          value={comment}
+          onChange={handleChange}
+        />
+      </label>
+      <button>Submit</button>
+    </form>
   );
 }
-
-export default NewComment;
