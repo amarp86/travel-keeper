@@ -6,7 +6,7 @@ import Likes from "../components/Likes";
 import NewComment from "../components/NewComment";
 
 function Explore(props) {
-  const { currentUser, handleDelete } = props;
+  const { currentUser, handleDelete, allPosts } = props;
 
   const [currentPosts, setCurrentPosts] = useState([]);
 
@@ -17,7 +17,7 @@ function Explore(props) {
     };
 
     getPosts();
-  }, [currentPosts.comments]);
+  }, [allPosts, allPosts.comments]);
 
   return (
     <div className="explore-entire-area">
@@ -46,7 +46,9 @@ function Explore(props) {
                 </Link>
                 <button
                   className="delete-button"
-                  onClick={() => handleDelete(post.id)}
+                  onClick={() => {
+                    handleDelete(post.id);
+                  }}
                 >
                   Delete
                 </button>

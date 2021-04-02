@@ -37,7 +37,8 @@
   grid-area: C;
   padding: 10px 10px;
   overflow-y: scroll;
-  max-height: 176px;
+  height: 176px;
+  width: 350px;
 }
 
 .likes-area {

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { addComment } from "../services/comments";
 
 export default function FoodCreate(props) {
-  const [comments, setComments] = useState([]);
   const [formData, setFormData] = useState({
     user_id: "",
     comment: "",
@@ -20,12 +19,11 @@ export default function FoodCreate(props) {
   };
 
   const handleComment = async () => {
-    const newComment = await addComment(postId, {
+    await addComment(postId, {
       content: comment,
       user_id: currentUser.id,
       post_id: postId,
     });
-    setComments((prevState) => [...prevState, newComment]);
   };
 
   return (

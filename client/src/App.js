@@ -9,6 +9,7 @@ import PostCreate from "./screens/PostCreate";
 import PostEdit from "./screens/PostEdit";
 import Home from "./components/Home";
 import { getAllPosts, putPost, destroyPost } from "./services/posts";
+import { getAllComments } from "./services/comments";
 import {
   loginUser,
   registerUser,
@@ -19,6 +20,7 @@ import {
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const [allPosts, setAllPosts] = useState([]);
+  const [allComments, setAllComments] = useState([]);
   const history = useHistory();
 
   useEffect(() => {
@@ -33,6 +35,11 @@ function App() {
       setAllPosts(posts);
     };
     getPosts();
+    const getComments = async () => {
+      const comments = await getAllComments();
+      setAllComments(comments);
+    };
+    getComments();
   }, []);
 
   const handleLogin = async (formData) => {
@@ -63,7 +70,8 @@ function App() {
   };
   const handleDelete = async (id) => {
     await destroyPost(id);
-    setAllPosts((prevState) => prevState.filter((food) => food.id !== id));
+    setAllPosts((prevState) => prevState.filter((post) => post.id !== id));
+    history.push("/explore");
   };
   return (
     <div className="App">
@@ -83,6 +91,7 @@ function App() {
               allPosts={allPosts}
               currentUser={currentUser}
               handleDelete={handleDelete}
+              allComments={allComments}
             />
           </Route>
           <Route path="/createpost">
