@@ -39,6 +39,7 @@
 .comments-section {
   grid-area: C;
   border: 1px solid black;
+  border-radius: 5px;
   margin: 5px;
   padding: 10px 10px;
   overflow-y: scroll;
