@@ -22,6 +22,7 @@ function App() {
   const [allPosts, setAllPosts] = useState([]);
   const [allComments, setAllComments] = useState([]);
   const history = useHistory();
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     const handleVerify = async () => {
@@ -35,12 +36,7 @@ function App() {
       setAllPosts(posts);
     };
     getPosts();
-    const getComments = async () => {
-      const comments = await getAllComments();
-      setAllComments(comments);
-    };
-    getComments();
-  }, []);
+  }, [toggle]);
 
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
@@ -92,6 +88,7 @@ function App() {
               currentUser={currentUser}
               handleDelete={handleDelete}
               allComments={allComments}
+              setToggle={setToggle}
             />
           </Route>
           <Route path="/createpost">

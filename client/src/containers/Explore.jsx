@@ -6,7 +6,7 @@ import Likes from "../components/Likes";
 import NewComment from "../components/NewComment";
 
 function Explore(props) {
-  const { currentUser, handleDelete, allPosts } = props;
+  const { currentUser, handleDelete, allPosts, setToggle } = props;
 
   const [currentPosts, setCurrentPosts] = useState([]);
 
@@ -24,7 +24,7 @@ function Explore(props) {
       {currentPosts.map((post, index) => (
         <div key={index} className="each-full-post">
           <img className="picture" src={post.img_url} alt={post.id} />
-          {console.log(post)}
+
           <div className="post-details">
             <h1>{post.user.name}</h1>
             <h2>{post.location}</h2>
@@ -33,7 +33,7 @@ function Explore(props) {
           <div className="comments-section">
             {post.comments.map((comment, index) => (
               <p key={index}>
-                {post.user.name} says {comment.content}
+                {comment.user.name} says {comment.content}
               </p>
             ))}
           </div>
@@ -58,6 +58,7 @@ function Explore(props) {
                   allComments={post.comments}
                   postId={post.id}
                   currentUser={currentUser}
+                  setToggle={setToggle}
                 />
               </div>
             </>
@@ -72,6 +73,7 @@ function Explore(props) {
                   allComments={post.comments}
                   postId={post.id}
                   currentUser={currentUser}
+                  setToggle={setToggle}
                 />
               </div>
             </>

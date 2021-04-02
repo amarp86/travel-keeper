@@ -8,7 +8,7 @@ export default function FoodCreate(props) {
     post_id: "",
   });
   const { comment } = formData;
-  const { postId, currentUser } = props;
+  const { postId, currentUser, setToggle } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,12 +18,15 @@ export default function FoodCreate(props) {
     }));
   };
 
-  const handleComment = async () => {
+  const handleComment = async (e) => {
+    e.preventDefault();
     await addComment(postId, {
       content: comment,
       user_id: currentUser.id,
       post_id: postId,
     });
+    setToggle((curr) => !curr);
+    setFormData({ comment: "" });
   };
 
   return (

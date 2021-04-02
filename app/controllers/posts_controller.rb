@@ -9,13 +9,13 @@ class PostsController < ApplicationController
     @posts = Post.all
     
 
-    render json: @posts, include: [:user, :comments, :likes]
+    render json: @posts, include: [:user, {comments:{include: :user}}, :likes]
     
   end
 
   # GET /posts/1
   def show
-    render json: @post, include: :user
+    render json: @post, include: [:user, {comments:{include: :user}}, :likes]
   end
 
   # POST /posts
