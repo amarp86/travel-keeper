@@ -13,13 +13,16 @@ function Nav(props) {
           <div className="logged-in-links">
             <Link to="/explore">Explore</Link>
             <Link to="/createpost">New Post</Link>
-            <p>{currentUser.username}</p>
-            <button onClick={handleLogout}>Logout</button>
+            <a href="/">Welcome: {currentUser.username}</a>
+            <button className="button" onClick={handleLogout}>
+              Logout
+            </button>
           </div>
         ) : (
-          <div classname="logged-out-links">
+          <div className="logged-out-links">
+            <Link to="/explore">Explore</Link>
             <Link to="/login">
-              <button>Login</button>
+              <button className="button">Login</button>
             </Link>
           </div>
         )}

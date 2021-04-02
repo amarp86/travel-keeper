@@ -1,3 +1,33 @@
-.explore {
-  overflow-y: scroll;
+.explore-entire-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.each-full-post {
+  display: grid;
+  grid-template-areas:
+    "P P D D "
+    "P P C C"
+    "B L L L";
+}
+
+.picture {
+  grid-area: P;
+  width: 800px;
+}
+
+.post-details {
+  grid-area: D;
+}
+
+.comments-section {
+  grid-area: C;
+}
+
+.likes-area {
+  grid-area: L;
+}
+
+.button {
+  grid-area: B;
 }

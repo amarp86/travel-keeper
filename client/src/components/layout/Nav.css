@@ -7,15 +7,26 @@
 
 .title {
   display: flex;
+  padding: 10px 10px;
 }
-.logged-in-links {
+.nav a {
+  text-decoration: none;
+}
+.logged-in-links,
+.logged-out-links {
   display: flex;
   flex-direction: row;
-
-  margin: 0 auto;
+  position: absolute;
+  right: 10px;
+  top: 30px;
 }
 
-.logged-in-links a {
+.logged-in-links a,
+.logged-out-links a {
   text-decoration: none;
   padding: 10px 10px;
+}
+
+.button {
+  padding: 10px;
 }
