@@ -30,7 +30,7 @@ export default function PostCreate(props) {
   };
   if (!currentUser) {
     return (
-      <div classname="not-logged-in">
+      <div className="not-logged-in">
         <h1>Please Log In First</h1>
       </div>
     );
