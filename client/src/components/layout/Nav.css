@@ -8,6 +8,8 @@
 .title {
   display: flex;
   padding: 10px 10px;
+  font-family: "Acme", sans-serif;
+  color: black;
 }
 .nav a {
   text-decoration: none;
@@ -31,5 +33,10 @@
 }
 
 .button {
-  padding: 10px;
+  padding: 2px 5px;
+}
+
+.logout-button {
+  margin-top: 10px;
+  height: 23px;
 }

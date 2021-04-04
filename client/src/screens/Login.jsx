@@ -50,10 +50,13 @@ export default function Login(props) {
       </label>
       <br />
       <div className="button-area">
-        <button className="button">Submit</button>
-        <Link to="/register">
-          <button className="button">Sign Up</button>
-        </Link>
+        <button className="submit-button">Submit</button>
+        <div className="sign-up-area">
+          <p>Don't have an account? </p>
+          <Link to="/register">
+            <button className="sign-up-button">Sign Up</button>
+          </Link>
+        </div>
       </div>
     </form>
   );

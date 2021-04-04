@@ -11,17 +11,21 @@ function Nav(props) {
         </Link>
         {currentUser ? (
           <div className="logged-in-links">
-            <Link to="/explore">Explore</Link>
-            <Link to="/createpost">New Post</Link>
-            <a href="/">Welcome: {currentUser.username}</a>
-            <button className="button" onClick={handleLogout}>
+            <Link to="/explore">
+              <button>Explore</button>
+            </Link>
+            <Link to="/createpost">
+              <button>New Post</button>
+            </Link>
+
+            <button className="logout-button" onClick={handleLogout}>
               Logout
             </button>
           </div>
         ) : (
           <div className="logged-out-links">
             <Link className="logged-out-explore" to="/explore">
-              Explore
+              <button>Explore</button>
             </Link>
             <Link to="/login">
               <button className="button">Login</button>

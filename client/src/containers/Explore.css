@@ -63,3 +63,7 @@
 .new-comment {
   grid-area: N;
 }
+
+.progress {
+  margin: 30% auto;
+}
