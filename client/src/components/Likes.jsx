@@ -19,7 +19,9 @@ function Likes(props) {
 
   return (
     <div className="likes">
-      <button onClick={handleLike}>Like</button>
+      <button className="like-button" onClick={handleLike}>
+        Like
+      </button>
       <h3>{likes.length}</h3>
     </div>
   );

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { addComment } from "../services/comments";
+import "./NewComment.css";
 
 export default function FoodCreate(props) {
   const [formData, setFormData] = useState({
@@ -35,6 +36,7 @@ export default function FoodCreate(props) {
       <label>
         New Comment:
         <input
+          className="input"
           type="text"
           name="comment"
           value={comment}

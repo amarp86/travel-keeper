@@ -4,6 +4,10 @@
   width: 100%;
   background-color: #006494;
 }
+.hamburger-menu {
+  z-index: 999;
+  display: none;
+}
 
 .title {
   display: flex;
@@ -39,4 +43,20 @@
 .logout-button {
   margin-top: 10px;
   height: 23px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logged-in-links,
+  .logged-out-links {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
 }
