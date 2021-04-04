@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { postPost } from "../services/posts";
+import "./PostCreate.css";
 
 export default function PostCreate(props) {
   const history = useHistory();
@@ -36,6 +37,7 @@ export default function PostCreate(props) {
   } else
     return (
       <form
+        className="entire-form"
         onSubmit={(e) => {
           e.preventDefault();
           handleCreate(formData);
@@ -45,6 +47,7 @@ export default function PostCreate(props) {
         <label>
           Image Link:
           <input
+            className="input"
             type="text"
             name="img_url"
             value={img_url}
@@ -54,6 +57,7 @@ export default function PostCreate(props) {
         <label>
           Location:
           <input
+            className="input"
             type="text"
             name="location"
             value={location}
@@ -63,6 +67,7 @@ export default function PostCreate(props) {
         <label>
           Description:
           <input
+            className="input"
             type="text"
             name="description"
             value={description}
