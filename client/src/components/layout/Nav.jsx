@@ -20,7 +20,9 @@ function Nav(props) {
           </div>
         ) : (
           <div className="logged-out-links">
-            <Link to="/explore">Explore</Link>
+            <Link className="logged-out-explore" to="/explore">
+              Explore
+            </Link>
             <Link to="/login">
               <button className="button">Login</button>
             </Link>

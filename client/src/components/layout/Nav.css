@@ -26,6 +26,9 @@
   text-decoration: none;
   padding: 10px 10px;
 }
+.logged-out-explore {
+  padding: 20px 0px;
+}
 
 .button {
   padding: 10px;
