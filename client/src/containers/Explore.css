@@ -11,9 +11,10 @@
   background-color: white;
   border: 2px solid black;
   border-radius: 10px;
+  box-shadow: 5px 5px 2px grey;
   padding: 25px 50px;
   margin: 10px auto;
-  max-width: 85%;
+
   display: grid;
   grid-template-areas:
     "P P D D "
@@ -40,8 +41,9 @@
   grid-area: C;
   border: 1px solid black;
   border-radius: 5px;
-  margin: 5px;
+  margin: 2px;
   padding: 10px 10px;
+  margin-left: 20px;
   overflow-y: scroll;
   height: 176px;
   width: 350px;
