@@ -6,6 +6,11 @@
   display: flex;
   flex-direction: column;
 }
+.main-welcome {
+  font-family: "Permanent Marker", cursive;
+  font-size: 35pt;
+  color: black;
+}
 
 .explore-button,
 .mission-statement {
@@ -33,8 +38,10 @@
 }
 
 .mission-statement {
-  margin: 0 auto;
-  max-width: 20vw;
+  margin: 10px auto;
+  max-width: 35vw;
+  font-family: "New Tegomin", serif;
+  font-size: 18pt;
 }
 
 @media only screen and (max-width: 600px) {
@@ -53,5 +60,6 @@
     padding-top: 10px;
     margin: 0 auto;
     max-width: 80vw;
+    margin-bottom: 30px;
   }
 }

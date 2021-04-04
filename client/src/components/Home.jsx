@@ -5,7 +5,7 @@ import MainPic from "../images/long road ahead.jpeg";
 function Home(props) {
   return (
     <div className="home-entire-area">
-      <h1>Welcome to Travel Keeper</h1>
+      <h1 className="main-welcome">Welcome to Travel Keeper</h1>
       <div className="home-content">
         <div className="home-banner-image">
           <img className="home-image" src={MainPic} alt="main" />
@@ -20,10 +20,11 @@ function Home(props) {
             <button className="explore-button">Let's Explore</button>
           </Link>
           <div className="mission-statement">
-            Travel Keeper is a web application that utilizes React, Ruby, and
-            Rail in a full stack operation. It allows users to create accounts
-            and post pictures, details, comments, and lets users like others'
-            posts!
+            Travel Keeper is a web application that utilizes React, Ruby on
+            Rails, PostgreSQL, Javascript, HTML, and CSS in a full stack
+            application. It allows users to create accounts and post multiple
+            posts with pictures, details, comments, and lets users "like" other
+            users posts!
           </div>
         </div>
       </div>

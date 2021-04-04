@@ -10,10 +10,11 @@
 }
 
 .title {
+  font-size: 45pt;
   display: flex;
-  padding: 10px 10px;
+  padding: 0px 10px;
   font-family: "Acme", sans-serif;
-  color: black;
+  color: white;
 }
 .nav a {
   text-decoration: none;
@@ -58,5 +59,9 @@
     position: absolute;
     right: 30px;
     top: 30px;
+  }
+  .title {
+    font-size: 20pt;
+    color: white;
   }
 }
