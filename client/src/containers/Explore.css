@@ -84,6 +84,30 @@
     object-fit: cover;
   }
   .comments-section {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  .new-comment {
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .each-full-post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+  .picture {
+    margin: 0 auto;
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+  }
+  .comments-section {
+    margin: 0 auto;
     width: 80%;
     margin-bottom: 15px;
   }
