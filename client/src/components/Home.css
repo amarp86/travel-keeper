@@ -17,7 +17,7 @@
 }
 .home-banner-image {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .headliner {
@@ -26,12 +26,31 @@
   position: absolute;
   bottom: 119px;
   left: 160px;
-  background-color: #939a456d;
+  background-color: #939a4593;
   color: rgba(255, 255, 255, 0.564);
   font-weight: bold;
   padding: 25px;
 }
 
 .mission-statement {
+  margin: 0 auto;
   max-width: 20vw;
+}
+@media only screen and (max-width: 600px) {
+  .headliner {
+    font-size: 15px;
+    max-width: 40%;
+    position: absolute;
+    bottom: 35px;
+    left: 20px;
+    background-color: #939a45bd;
+    color: rgba(255, 255, 255, 0.564);
+    font-weight: bold;
+    padding: 25px;
+  }
+  .mission-statement {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 80vw;
+  }
 }
