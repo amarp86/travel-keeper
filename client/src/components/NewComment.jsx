@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { addComment } from "../services/comments";
 import "./NewComment.css";
+import { Button } from "@material-ui/core";
 
 export default function FoodCreate(props) {
   const [formData, setFormData] = useState({
@@ -43,7 +44,9 @@ export default function FoodCreate(props) {
           onChange={handleChange}
         />
       </label>
-      <button>Submit</button>
+      <Button variant="outlined" color="default" className="like-button">
+        Submit
+      </Button>
     </form>
   );
 }

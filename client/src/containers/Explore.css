@@ -109,12 +109,15 @@
     object-fit: cover;
   }
   .comments-section {
-    margin: 0 auto;
+    margin: 0 -5%;
     width: 80%;
     margin-bottom: 15px;
   }
   .new-comment {
     margin: 5px;
+  }
+  .post-details {
+    margin: 0 -5%;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 451px) {
@@ -123,23 +126,25 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 70%;
-    align-items: center;
   }
   .picture {
-    width: 370px;
+    width: 400px;
     height: auto;
     object-fit: cover;
   }
   .comments-section {
-    margin: 0 auto;
+    margin: 0 -5%;
     width: 100%;
     margin-bottom: 15px;
   }
   .new-comment {
     margin: 5px;
   }
+  .post-details {
+    margin: 0 -5%;
+  }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) and (min-width: 301px) {
   .each-full-post {
     display: flex;
     flex-direction: column;
@@ -148,6 +153,31 @@
   }
   .picture {
     margin: 0 auto;
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+  }
+  .comments-section {
+    margin: 0 -5%;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .new-comment {
+    margin: 5px;
+  }
+  .post-details {
+    margin: 0 -5%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .each-full-post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 55%;
+  }
+  .picture {
+    margin: 0 -13%;
     width: 200px;
     height: auto;
     object-fit: cover;

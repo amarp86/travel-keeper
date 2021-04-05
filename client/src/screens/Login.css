@@ -1,11 +1,14 @@
 .entire-form {
-  background-color: rgba(86, 56, 52, 0.749);
+  background-color: white;
   border: 2px solid grey;
   box-shadow: 5px 5px 5px grey;
   border-radius: 20px;
   max-width: 50%;
   margin: 0 auto;
   margin-top: 40px;
+}
+.entire-form a {
+  text-decoration: none;
 }
 
 .input {
@@ -19,6 +22,7 @@
 .button-area {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .sign-up-button {

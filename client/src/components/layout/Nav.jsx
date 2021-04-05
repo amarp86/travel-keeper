@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./Nav.css";
 import Hamburger from "./Hamburger";
 import HamburgerLogout from "./HamburgerLogout";
+import { Button } from "@material-ui/core";
 
 function Nav(props) {
   const { currentUser, handleLogout } = props;
@@ -21,15 +22,25 @@ function Nav(props) {
             </div>
             <div className="logged-in-links">
               <Link to="/explore">
-                <button>Explore</button>
+                <Button variant="outlined" color="default" className="button">
+                  Explore
+                </Button>
               </Link>
               <Link to="/createpost">
-                <button>New Post</button>
+                <Button variant="outlined" color="default" className="button">
+                  New Post
+                </Button>
               </Link>
-
-              <button className="logout-button" onClick={handleLogout}>
-                Logout
-              </button>
+              <Link to="/login">
+                <Button
+                  variant="outlined"
+                  color="secondary"
+                  className="logout-button"
+                  onClick={handleLogout}
+                >
+                  Logout
+                </Button>
+              </Link>
             </div>
           </>
         ) : (
@@ -42,10 +53,10 @@ function Nav(props) {
             </div>
             <div className="logged-out-links">
               <Link className="logged-out-explore" to="/explore">
-                <button>Explore</button>
+                <Button>Explore</Button>
               </Link>
               <Link to="/login">
-                <button className="button">Login</button>
+                <Button className="Button">Login</Button>
               </Link>
             </div>
           </>

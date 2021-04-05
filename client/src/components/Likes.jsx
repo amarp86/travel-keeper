@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { createLike } from "../services/likes";
+import { Button } from "@material-ui/core";
 
 function Likes(props) {
   const [likes, setLikes] = useState([]);
@@ -19,9 +20,14 @@ function Likes(props) {
 
   return (
     <div className="likes">
-      <button className="like-button" onClick={handleLike}>
+      <Button
+        variant="outlined"
+        color="primary"
+        className="like-button"
+        onClick={handleLike}
+      >
         Like
-      </button>
+      </Button>
       <h3>{likes.length}</h3>
     </div>
   );
