@@ -3,7 +3,7 @@ import { addComment } from "../services/comments";
 import "./NewComment.css";
 import { Button } from "@material-ui/core";
 
-export default function FoodCreate(props) {
+export default function CommentCreate(props) {
   const [formData, setFormData] = useState({
     user_id: "",
     comment: "",
