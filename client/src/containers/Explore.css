@@ -20,6 +20,9 @@
     "P P C C"
     "BL BL N N";
 }
+.each-full-post a {
+  text-decoration: none;
+}
 
 .picture {
   grid-area: P;
