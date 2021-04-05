@@ -76,7 +76,12 @@ export default function PostCreate(props) {
           />
         </label>
 
-        <Button type="submit" variant="outlined" color="primary">
+        <Button
+          type="submit"
+          variant="outlined"
+          color="primary"
+          className="button"
+        >
           Submit
         </Button>
       </form>

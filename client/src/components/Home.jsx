@@ -1,6 +1,7 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
 import MainPic from "../images/long road ahead.jpeg";
+import { Button } from "@material-ui/core";
 
 function Home(props) {
   return (
@@ -17,7 +18,13 @@ function Home(props) {
         </div>
         <div className="links-statement-container">
           <Link to="/explore">
-            <button className="explore-button">Let's Explore</button>
+            <Button
+              variant="outlined"
+              color="primary"
+              className="explore-button"
+            >
+              Let's Explore
+            </Button>
           </Link>
           <div className="mission-statement">
             Travel Keeper is a web application that utilizes React, Ruby on
