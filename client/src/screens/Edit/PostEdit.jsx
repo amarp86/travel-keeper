@@ -74,14 +74,16 @@ export default function PostEdit(props) {
           onChange={handleChange}
         />
       </label>
-      <Button
-        type="submit"
-        variant="outlined"
-        color="primary"
-        className="button"
-      >
-        Submit
-      </Button>
+      <div className="submit-edit-button">
+        <Button
+          type="submit"
+          variant="outlined"
+          color="primary"
+          className="submit-edit-button"
+        >
+          Submit
+        </Button>
+      </div>
     </form>
   );
 }

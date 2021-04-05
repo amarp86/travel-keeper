@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { postPost } from "../services/posts";
+import { postPost } from "../../services/posts";
 import "./PostCreate.css";
 import { Button } from "@material-ui/core";
 
@@ -75,15 +75,16 @@ export default function PostCreate(props) {
             onChange={handleChange}
           />
         </label>
-
-        <Button
-          type="submit"
-          variant="outlined"
-          color="primary"
-          className="button"
-        >
-          Submit
-        </Button>
+        <div className="submit-create-button">
+          <Button
+            type="submit"
+            variant="outlined"
+            color="primary"
+            className="submit-create-button"
+          >
+            Submit
+          </Button>
+        </div>
       </form>
     );
 }
