@@ -23,12 +23,17 @@
 .each-full-post a {
   text-decoration: none;
 }
+.edit-button,
+.delete-button {
+  margin-top: 20px;
+}
 
 .picture {
   grid-area: P;
   width: 800px;
   height: auto;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 .button-container {
   grid-area: BL;
