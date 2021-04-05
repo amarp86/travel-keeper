@@ -50,7 +50,7 @@ function App() {
       setCurrentUser(userData);
       history.push("/");
     } else {
-      alert("Passwords Do No Match");
+      alert("Passwords Do Not Match");
     }
   };
 
