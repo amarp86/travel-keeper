@@ -43,11 +43,50 @@
   font-family: "New Tegomin", serif;
   font-size: 18pt;
 }
+@media only screen and (max-width: 800px) and (min-width: 601px) {
+  .headliner {
+    font-size: 15px;
+    max-width: 40%;
+    position: absolute;
+    bottom: 35px;
+    left: 20px;
+    background-color: #939a45bd;
+    color: rgba(255, 255, 255, 0.564);
+    font-weight: bold;
+    padding: 25px;
+  }
+  .mission-statement {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 80vw;
+    margin-bottom: 30px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .headliner {
     font-size: 15px;
     max-width: 40%;
+    position: absolute;
+    bottom: 35px;
+    left: 20px;
+    background-color: #939a45bd;
+    color: rgba(255, 255, 255, 0.564);
+    font-weight: bold;
+    padding: 25px;
+  }
+  .mission-statement {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 80vw;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .headliner {
+    font-size: 10px;
+    max-width: 50%;
     position: absolute;
     bottom: 35px;
     left: 20px;
