@@ -69,6 +69,28 @@
 .progress {
   margin: 30% auto;
 }
+@media only screen and (max-width: 1400px) {
+  .each-full-post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 65%;
+  }
+  .picture {
+    margin: 0 auto;
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+  }
+  .comments-section {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  .new-comment {
+    margin: 5px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .each-full-post {
@@ -92,23 +114,22 @@
     margin: 5px;
   }
 }
-
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 300px) {
   .each-full-post {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 70%;
+    width: 55%;
   }
   .picture {
     margin: 0 auto;
-    width: 600px;
-    height: 350px;
+    width: 170px;
+    height: 150px;
     object-fit: cover;
   }
   .comments-section {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     margin-bottom: 15px;
   }
   .new-comment {

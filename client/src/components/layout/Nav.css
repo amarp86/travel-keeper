@@ -45,6 +45,21 @@
   margin-top: 10px;
   height: 23px;
 }
+@media only screen and (max-width: 1400px) {
+  .logged-in-links,
+  .logged-out-links {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 30px;
+    top: 70px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .logged-in-links,
@@ -63,21 +78,5 @@
   .title {
     font-size: 20pt;
     color: white;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  .logged-in-links,
-  .logged-out-links {
-    display: none;
-  }
-  .hamburger-menu {
-    display: block;
-    z-index: 999;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    right: 30px;
-    top: 70px;
   }
 }
