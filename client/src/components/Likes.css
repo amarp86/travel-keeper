@@ -1,0 +1,14 @@
+.likes {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.like-button {
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .likes {
+    margin-top: 25px;
+  }
+}

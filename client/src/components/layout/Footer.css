@@ -1,0 +1,19 @@
+.footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #006494;
+  width: 100%;
+  height: 40px;
+}
+
+.linkedin-image {
+  height: 25px;
+  padding: 5px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+.amar a {
+  color: white;
+}
