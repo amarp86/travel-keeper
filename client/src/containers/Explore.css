@@ -25,7 +25,7 @@
 .picture {
   grid-area: P;
   width: 800px;
-  height: 350px;
+  height: auto;
   object-fit: cover;
 }
 .button-container {
@@ -33,6 +33,7 @@
 }
 
 .post-details {
+  width: 100%;
   grid-area: D;
   padding: 10px 10px;
   font-family: "New Tegomin", serif;
@@ -78,9 +79,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 65%;
+    align-items: center;
   }
   .picture {
-    margin: 0 auto;
     width: 600px;
     height: 350px;
     object-fit: cover;
@@ -101,11 +102,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 80%;
+    align-items: center;
   }
   .picture {
-    margin: 0 auto;
     width: 200px;
-    height: 150px;
+    height: auto;
     object-fit: cover;
   }
   .comments-section {
@@ -123,11 +124,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 70%;
+    align-items: center;
   }
   .picture {
-    margin: 0 auto;
     width: 370px;
-    height: 150px;
+    height: auto;
     object-fit: cover;
   }
   .comments-section {
@@ -148,16 +149,19 @@
   }
   .picture {
     margin: 0 auto;
-    width: 170px;
-    height: 150px;
+    width: 200px;
+    height: auto;
     object-fit: cover;
   }
   .comments-section {
-    margin: 0 auto;
+    margin: 0 -5%;
     width: 100%;
     margin-bottom: 15px;
   }
   .new-comment {
     margin: 5px;
+  }
+  .post-details {
+    margin: 0 -5%;
   }
 }
