@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { postPost } from "../services/posts";
 import "./PostCreate.css";
+import { Button } from "@material-ui/core";
 
 export default function PostCreate(props) {
   const history = useHistory();
@@ -75,7 +76,9 @@ export default function PostCreate(props) {
           />
         </label>
 
-        <button>Submit</button>
+        <Button type="submit" variant="outlined" color="primary">
+          Submit
+        </Button>
       </form>
     );
 }

@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import "./PostEdit.css";
+import { Button } from "@material-ui/core";
 
 export default function PostEdit(props) {
   const [formData, setFormData] = useState({
@@ -35,6 +37,7 @@ export default function PostEdit(props) {
 
   return (
     <form
+      className="entire-form"
       onSubmit={(e) => {
         e.preventDefault();
         handleUpdate(id, formData);
@@ -44,6 +47,7 @@ export default function PostEdit(props) {
       <label>
         Image Link:
         <input
+          className="input"
           type="text"
           name="img_url"
           value={img_url}
@@ -53,6 +57,7 @@ export default function PostEdit(props) {
       <label>
         Location:
         <input
+          className="input"
           type="text"
           name="location"
           value={location}
@@ -62,13 +67,16 @@ export default function PostEdit(props) {
       <label>
         Description:
         <input
+          className="input"
           type="text"
           name="description"
           value={description}
           onChange={handleChange}
         />
       </label>
-      <button>Submit</button>
+      <Button type="submit" variant="outlined" color="primary">
+        Submit
+      </Button>
     </form>
   );
 }
