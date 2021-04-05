@@ -19,7 +19,7 @@ function Home(props) {
         <div className="links-statement-container">
           <Link to="/explore">
             <Button
-              variant="outlined"
+              variant="contained"
               color="primary"
               className="explore-button"
             >
