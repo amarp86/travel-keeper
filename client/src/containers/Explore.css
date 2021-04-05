@@ -55,6 +55,7 @@
 .likes-area {
   grid-area: BL;
   min-width: 150px;
+  padding-top: 20px;
 }
 
 .delete-button,
