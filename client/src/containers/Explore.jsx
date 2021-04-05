@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { getAllPosts } from "../services/posts";
 import Likes from "../components/Likes";
 import NewComment from "../components/NewComment";
-import { CircularProgress } from "@material-ui/core";
+import { CircularProgress, Button } from "@material-ui/core";
 
 function Explore(props) {
   const { currentUser, handleDelete, allPosts, setToggle } = props;
@@ -47,16 +47,24 @@ function Explore(props) {
               <>
                 <div className="button-container">
                   <Link to={`/posts/${post.id}/edit`}>
-                    <button className="edit-button">Edit</button>
+                    <Button
+                      variant="outlined"
+                      color="primary"
+                      className="edit-button"
+                    >
+                      Edit
+                    </Button>
                   </Link>
-                  <button
+                  <Button
+                    variant="outlined"
+                    color="primary"
                     className="delete-button"
                     onClick={() => {
                       handleDelete(post.id);
                     }}
                   >
                     Delete
-                  </button>
+                  </Button>
                 </div>
                 <div className="new-comment">
                   <NewComment
