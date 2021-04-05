@@ -9,7 +9,6 @@
 
 .each-full-post {
   background-color: white;
-
   border-radius: 10px;
   box-shadow: 5px 5px 2px grey;
   padding: 25px 50px;
@@ -25,7 +24,7 @@
 .picture {
   grid-area: P;
   width: 800px;
-  height: 350px;
+  height: auto;
   object-fit: cover;
 }
 .button-container {
@@ -33,6 +32,7 @@
 }
 
 .post-details {
+  width: 100%;
   grid-area: D;
   padding: 10px 10px;
   font-family: "New Tegomin", serif;
@@ -78,9 +78,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 65%;
+    align-items: center;
   }
   .picture {
-    margin: 0 auto;
     width: 600px;
     height: 350px;
     object-fit: cover;
@@ -101,20 +101,23 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 80%;
+    align-items: center;
   }
   .picture {
-    margin: 0 auto;
     width: 200px;
-    height: 150px;
+    height: auto;
     object-fit: cover;
   }
   .comments-section {
-    margin: 0 auto;
+    margin: 0 -5%;
     width: 80%;
     margin-bottom: 15px;
   }
   .new-comment {
     margin: 5px;
+  }
+  .post-details {
+    margin: 0 -5%;
   }
 }
 @media only screen and (max-width: 800px) and (min-width: 451px) {
@@ -125,21 +128,23 @@
     width: 70%;
   }
   .picture {
-    margin: 0 auto;
-    width: 370px;
-    height: 150px;
+    width: 400px;
+    height: auto;
     object-fit: cover;
   }
   .comments-section {
-    margin: 0 auto;
+    margin: 0 -5%;
     width: 100%;
     margin-bottom: 15px;
   }
   .new-comment {
     margin: 5px;
   }
+  .post-details {
+    margin: 0 -5%;
+  }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) and (min-width: 301px) {
   .each-full-post {
     display: flex;
     flex-direction: column;
@@ -148,16 +153,44 @@
   }
   .picture {
     margin: 0 auto;
-    width: 170px;
-    height: 150px;
+    width: 200px;
+    height: auto;
     object-fit: cover;
   }
   .comments-section {
-    margin: 0 auto;
+    margin: 0 -5%;
     width: 100%;
     margin-bottom: 15px;
   }
   .new-comment {
     margin: 5px;
+  }
+  .post-details {
+    margin: 0 -5%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .each-full-post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 55%;
+  }
+  .picture {
+    margin: 0 -13%;
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+  }
+  .comments-section {
+    margin: 0 -5%;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .new-comment {
+    margin: 5px;
+  }
+  .post-details {
+    margin: 0 -5%;
   }
 }

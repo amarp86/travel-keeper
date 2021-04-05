@@ -38,12 +38,12 @@
 }
 
 .button {
-  padding: 2px 5px;
+  padding: 0px 0px;
 }
 
 .logout-button {
-  margin-top: 10px;
-  height: 23px;
+  top: 0;
+  height: 37px;
 }
 @media only screen and (max-width: 1400px) {
   .logged-in-links,

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
+import { Button } from "@material-ui/core";
 
 export default function Login(props) {
   const [formData, setFormData] = useState({
@@ -50,11 +51,19 @@ export default function Login(props) {
       </label>
       <br />
       <div className="button-area">
-        <button className="submit-button">Submit</button>
+        <Button variant="outlined" color="primary" className="submit-button">
+          Submit
+        </Button>
         <div className="sign-up-area">
           <p>Don't have an account? </p>
           <Link to="/register">
-            <button className="sign-up-button">Sign Up</button>
+            <Button
+              variant="outlined"
+              color="primary"
+              className="sign-up-button"
+            >
+              Sign Up
+            </Button>
           </Link>
         </div>
       </div>
