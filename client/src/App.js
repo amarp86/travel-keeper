@@ -5,8 +5,8 @@ import Layout from "./components/layout/Layout";
 import Explore from "./containers/Explore";
 import Login from "./screens/Login";
 import Register from "./screens/Register";
-import PostCreate from "./screens/PostCreate";
-import PostEdit from "./screens/PostEdit";
+import PostCreate from "./screens/Create/PostCreate";
+import PostEdit from "./screens/Edit/PostEdit";
 import Home from "./components/Home";
 import { getAllPosts, putPost, destroyPost } from "./services/posts";
 
