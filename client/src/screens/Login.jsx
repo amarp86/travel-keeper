@@ -51,7 +51,12 @@ export default function Login(props) {
       </label>
       <br />
       <div className="button-area">
-        <Button variant="outlined" color="primary" className="submit-button">
+        <Button
+          type="submit"
+          variant="outlined"
+          color="primary"
+          className="submit-button"
+        >
           Submit
         </Button>
         <div className="sign-up-area">

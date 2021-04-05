@@ -44,7 +44,12 @@ export default function FoodCreate(props) {
           onChange={handleChange}
         />
       </label>
-      <Button variant="outlined" color="default" className="like-button">
+      <Button
+        type="submit"
+        variant="outlined"
+        color="default"
+        className="like-button"
+      >
         Submit
       </Button>
     </form>

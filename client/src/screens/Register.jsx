@@ -84,7 +84,7 @@ export default function Register(props) {
         />
       </label>
       <br />
-      <Button variant="outlined" color="default">
+      <Button type="submit" variant="outlined" color="default">
         Submit
       </Button>
     </form>
