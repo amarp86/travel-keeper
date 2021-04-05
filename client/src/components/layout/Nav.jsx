@@ -14,6 +14,7 @@ function Nav(props) {
         </Link>
         {currentUser ? (
           <>
+            <div className="welcome-user">Logged In As: {currentUser.name}</div>
             <div className="hamburger-menu">
               <Hamburger
                 handleLogout={handleLogout}
