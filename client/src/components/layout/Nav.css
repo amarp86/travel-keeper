@@ -8,7 +8,14 @@
   z-index: 999;
   display: none;
 }
-
+.welcome-user {
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  font-family: "Acme", sans-serif;
+  font-size: 20pt;
+  color: white;
+}
 .title {
   font-size: 45pt;
   display: flex;
@@ -77,6 +84,14 @@
   }
   .title {
     font-size: 20pt;
+    color: white;
+  }
+  .welcome-user {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-family: "Acme", sans-serif;
+    font-size: 7pt;
     color: white;
   }
 }
