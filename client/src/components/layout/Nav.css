@@ -66,6 +66,14 @@
     right: 30px;
     top: 70px;
   }
+  .welcome-user {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    font-family: "Acme", sans-serif;
+    font-size: 17pt;
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -89,7 +97,7 @@
   .welcome-user {
     position: absolute;
     right: 30px;
-    top: 10px;
+    top: 5px;
     font-family: "Acme", sans-serif;
     font-size: 7pt;
     color: white;
