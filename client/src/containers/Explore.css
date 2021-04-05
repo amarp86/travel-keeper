@@ -35,6 +35,8 @@
 .post-details {
   grid-area: D;
   padding: 10px 10px;
+  font-family: "New Tegomin", serif;
+  font-style: italic;
 }
 
 .comments-section {
@@ -47,6 +49,7 @@
   overflow-y: scroll;
   height: 176px;
   width: 350px;
+  font-family: "New Tegomin", serif;
 }
 
 .likes-area {
