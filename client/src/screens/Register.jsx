@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Register.css";
+import { Button } from "@material-ui/core";
 
 export default function Register(props) {
   const [formData, setFormData] = useState({
@@ -83,7 +84,9 @@ export default function Register(props) {
         />
       </label>
       <br />
-      <button>Submit</button>
+      <Button variant="outlined" color="default">
+        Submit
+      </Button>
     </form>
   );
 }
