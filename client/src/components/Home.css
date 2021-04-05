@@ -1,6 +1,9 @@
 .home-entire-area {
   overflow-x: hidden;
 }
+.home-entire-area a {
+  text-decoration: none;
+}
 
 .home-content {
   display: flex;
