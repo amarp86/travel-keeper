@@ -53,10 +53,18 @@ function Nav(props) {
             </div>
             <div className="logged-out-links">
               <Link className="logged-out-explore" to="/explore">
-                <Button>Explore</Button>
+                <Button variant="outlined" color="default">
+                  Explore
+                </Button>
               </Link>
               <Link to="/login">
-                <Button className="Button">Login</Button>
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  className="Button"
+                >
+                  Login
+                </Button>
               </Link>
             </div>
           </>
