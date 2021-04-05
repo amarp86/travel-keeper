@@ -33,7 +33,7 @@ function Nav(props) {
               </Link>
               <Link to="/login">
                 <Button
-                  variant="outlined"
+                  variant="contained"
                   color="secondary"
                   className="logout-button"
                   onClick={handleLogout}
