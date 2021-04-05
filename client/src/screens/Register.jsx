@@ -7,8 +7,9 @@ export default function Register(props) {
     email: "",
     password: "",
     name: "",
+    verify: "",
   });
-  const { username, email, password, name } = formData;
+  const { username, email, password, name, verify } = formData;
   const { handleRegister } = props;
 
   const handleChange = (e) => {
@@ -68,6 +69,16 @@ export default function Register(props) {
           type="password"
           name="password"
           value={password}
+          onChange={handleChange}
+        />
+      </label>
+      <label>
+        Verify:
+        <input
+          className="input"
+          type="password"
+          name="verify"
+          value={verify}
           onChange={handleChange}
         />
       </label>

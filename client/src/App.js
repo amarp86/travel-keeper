@@ -45,9 +45,13 @@ function App() {
   };
 
   const handleRegister = async (formData) => {
-    const userData = await registerUser(formData);
-    setCurrentUser(userData);
-    history.push("/");
+    if (formData.password === formData.verify) {
+      const userData = await registerUser(formData);
+      setCurrentUser(userData);
+      history.push("/");
+    } else {
+      alert("Passwords Do No Match");
+    }
   };
 
   const handleLogout = () => {
