@@ -101,7 +101,22 @@ Post-MVP
 1. Add likes table to backened and implement on front end
 2. Add a scrolling feed page and make individual detail page per post
 
-Code Showcase
+Code Showcase:
+
+Handle New Comment Code:
+
+```
+const handleComment = async (e) => {
+    e.preventDefault();
+    await addComment(postId, {
+      content: comment,
+      user_id: currentUser.id,
+      post_id: postId,
+    });
+    setToggle((curr) => !curr);
+    setFormData({ comment: "" });
+  };
+```
 
 Code Issues & Resolutions
 
