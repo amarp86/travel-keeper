@@ -11,7 +11,7 @@ function Home(props) {
         <div className="home-banner-image">
           <img className="home-image" src={MainPic} alt="main" />
           <div className="headliner">
-            This a place for the adventurers, the travelers, and the
+            This is a place for the adventurers, the travelers, and the
             experimenters. Send us your dreams and we'll help you share them
             with the world.
           </div>
